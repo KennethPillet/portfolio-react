@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Main fill='Japan'/>
+      <Main fill=''/>
       <Footer />
     </div>
   );
