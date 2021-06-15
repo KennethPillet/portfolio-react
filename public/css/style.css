@@ -1,0 +1,44 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    cursor: url("../img/logo/oxy-chrome/left_ptr.cur"), pointer;
+}
+main{
+    background-color: #FFFCF2;
+}
+header,footer{
+    border: 1px solid #707070;
+    padding: 1%;
+}
+header a{
+    margin: 0 2% 0 2%;
+}
+header a:hover{
+    text-transform: uppercase;
+}
+span{
+    font-weight: bold ;
+}
+#arrowUp{
+    max-width: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    opacity: 50%;
+}
+#arrowUp:hover, #arrowBack:hover{
+    cursor: url("../img/logo/oxy-chrome/pointing_hand.cur"), pointer;
+}
+#arrowBack{
+    max-width: 20px;
+    opacity: 50%;
+    /* visibility: hidden; */
+}
+footer a{
+    cursor: pointer;
+}

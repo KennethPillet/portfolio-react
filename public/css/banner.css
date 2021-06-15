@@ -1,0 +1,26 @@
+.banner{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin: 2% 0 2% 0;
+}
+.banner:hover{
+    opacity: 30%;
+}
+
+.banner1{
+    background-image: url('../img/voyage/timo-wielink-4Zk45jNyQS4-unsplash.jpg');
+}
+.banner2{
+    background-image: url('../img/sport/sandro-schuh-HgwY_YQ1m0w-unsplash.jpg');
+}
+.banner3{
+    background-image: url('../img/snkrs/2458093.jpg');
+}
+.banner4{
+    background-image: url('../img/voyage/Eg7f0Q8XYAIWADr.jpeg');
+}
+.banner5{
+    background-image: url('../img/Simple_Technology_LinkedIn_Banner.png');
+}
