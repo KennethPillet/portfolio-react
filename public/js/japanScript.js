@@ -3,17 +3,17 @@
  }); */
 
 var scroll = window.resquestAnimationFrame || function(callback){window.setTimeout(callback,100/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop(){
-    elementsToShow.forEach(function(element){
-        if (isElementInViewport(element)){
-            element.classList.add('is-visible');
-        } else {
-            element.classList.remove('is-visible');
-        }
-    });
-    scroll(loop);
+  var elementsToShow = document.querySelectorAll('.show-on-scroll');
+  elementsToShow.forEach(function(element){
+      if (isElementInViewport(element)){
+          element.classList.add('is-visible');
+      } else {
+          element.classList.remove('is-visible');
+      }
+  });
+  scroll(loop);
 }
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826

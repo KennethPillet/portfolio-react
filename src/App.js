@@ -1,13 +1,12 @@
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import * as Nav from './components/Nav'
 import { Main } from './components/Main'
 
 function App() {
   return (
     <div>
-      <Header />
-      <Main fill=''/>
-      <Footer />
+      <Nav.Header />
+      <Main />
+      <Nav.Footer />
     </div>
   );
 }
