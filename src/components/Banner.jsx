@@ -1,5 +1,9 @@
 import React from 'react';
+import { Dev } from './Dev';
 import { Japan } from './Japan';
+import { Sneakers } from './Sneakers';
+import { Sport } from './Sport';
+import { Travel } from './Travel';
 
 export class Banner extends React.Component {
     constructor(){
@@ -8,40 +12,45 @@ export class Banner extends React.Component {
             isBannerDisplayed: true,
             pageDisplayed: '',
         }
-
     }
 
     displayBanner = () => {
-        this.setState( { pageDisplayed: '' } )
-        this.setState( { isBannerDisplayed: true } )
+        this.setState( { 
+            isBannerDisplayed: true,
+            pageDisplayed: '' 
+        } )
     }
     displayPage = (pageName) => {
-        this.setState( { pageDisplayed: pageName } )
-        this.setState( { isBannerDisplayed: false} )
+        console.log(pageName);
+        this.setState( { 
+            isBannerDisplayed: false,
+            pageDisplayed: pageName
+        } )
     }
-    handleChildClick = (event) => {
-        this.displayBanner()
-    }
+    
     renderBanners(){
         if (this.state.isBannerDisplayed){
             return  (
                 <div>
-                    <div class ="banner banner5" id=""></div> 
-                    <div onClick={ this.displayPage.bind(this, 'japan') } class ="banner banner4" id="Japan"></div>
-                    <div class ="banner banner3" id="Sneakers"></div> 
-                    <div class ="banner banner2" id="Sport"></div>
-                    <div class ="banner banner1" id ="Travel"></div>
+                    <div onClick={ this.displayPage.bind(this, 'japan') } className ="banner banner4" id="japan"></div>
+                    <div onClick={ this.displayPage.bind(this, 'sneaker') } className ="banner banner3" id="sneakers"></div> 
+                    <div onClick={ this.displayPage.bind(this, 'sport') } className ="banner banner2" id="sport"></div>
+                    <div onClick={ this.displayPage.bind(this, 'travel') } className ="banner banner1" id ="travel"></div>
+                    <div onClick={ this.displayPage.bind(this, 'dev') } className ="banner banner5" id="dev"></div> 
                 </div>
-                )
-            }
+            )
         }
-        render() {
-            return (
-                <main>
+    }
+    render() {
+        return (
+            <div>
                 { this.renderBanners() }
                 { this.state.pageDisplayed === 'japan' ? <Japan goBack= { this.displayBanner } /> : null }
-                
-            </main>
+                { this.state.pageDisplayed === 'sneaker' ? <Sneakers goBack= { this.displayBanner } /> : null }
+                { this.state.pageDisplayed === 'sport' ? <Sport goBack= { this.displayBanner } /> : null }
+                { this.state.pageDisplayed === 'travel' ? <Travel goBack= { this.displayBanner } /> : null }
+                { this.state.pageDisplayed === 'dev' ? <Dev goBack= { this.displayBanner } /> : null }
+            </div>
         )
     }
 }

@@ -1,13 +1,17 @@
-export function Header() {
+import React from 'react'
+
+export class Header extends React.Component {
+  render(){
     return (
-      <header id="up">
+      <header id="up" className="sticky-header">
         <nav>
-          <a href="index.html"><span>Qui suis je ?</span></a>
-          <a href="Portfolio.html">Portfolio</a>
+          <a href="#"><span>Qui suis je ?</span></a>
+          {/* <a>Portfolio</a> */}
           <a href="#contact">Contact</a>
         </nav>
       </header>
     );
+  }
 }
 
 export function Footer() {
