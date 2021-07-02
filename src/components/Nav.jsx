@@ -3,12 +3,13 @@ import React from 'react'
 export class Header extends React.Component {
   render(){
     return (
-      <header id="up" className="sticky-header">
+      <header id="header" className="sticky-header">
         <nav>
           <a href="#"><span>Qui suis je ?</span></a>
           {/* <a>Portfolio</a> */}
           <a href="#contact">Contact</a>
-        </nav>
+          {/* <a href="#header"><i id="arrowUp" className="fas fa-chevron-up"></i></a> */}
+        </nav>  
       </header>
     );
   }

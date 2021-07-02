@@ -36,13 +36,8 @@ span{
     right: 40px;
     opacity: 50%;
 }
-#arrowUp:hover, #arrowBack:hover{
+#arrowUp:hover {
     cursor: url("../img/logo/oxy-chrome/pointing_hand.cur"), pointer;
-}
-#arrowBack{
-    max-width: 20px;
-    opacity: 50%;
-    /* visibility: hidden; */
 }
 footer a{
     cursor: pointer;

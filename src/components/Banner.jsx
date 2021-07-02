@@ -21,7 +21,6 @@ export class Banner extends React.Component {
         } )
     }
     displayPage = (pageName) => {
-        console.log(pageName);
         this.setState( { 
             isBannerDisplayed: false,
             pageDisplayed: pageName

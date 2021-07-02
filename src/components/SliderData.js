@@ -1,0 +1,26 @@
+export const SliderData = [
+    {
+      image:
+        'img/snkrs/2458093.jpg'
+    },
+    {
+      image:
+      "img/snkrs/nike-sb-dunk-low-pro-purple-lobster-release-date.jpg"
+    },
+    {
+      image:
+      "img/snkrs/kaws-air-jordan-4-online-release-01-960x640.jpg"
+    },
+    {
+      image:
+      "img/snkrs/Size-Nike-Air-Max-1-Dawn-01.jpg"
+    },
+    {
+      image:
+      "img/snkrs/travis-scott-x-nike-sb-dunk-low-CT5053-001.jpg"
+    },
+    {
+      image:
+      "img/snkrs/warren-jones-LFlVuWLjYEo-unsplash.jpg"
+    }
+  ];
