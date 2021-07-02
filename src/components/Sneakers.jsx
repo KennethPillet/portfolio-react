@@ -1,11 +1,13 @@
 import React from 'react';
 import ImageSlider from './ImageSlider.js';
 import { SliderData } from './SliderData';
+import { BsArrow90DegLeft } from 'react-icons/bs';
 
 export class Sneakers extends React.Component{
     render(){
         return (
-            <div >
+            <div>
+                <BsArrow90DegLeft id="arrowBack" onClick={ this.props.goBack } />
                 <ImageSlider slides={SliderData} />
                 <a href="https://histoire-airmax.netlify.app" target="_blank"rel="noopener noreferrer">Site fais avec Bootstrap lors d'une formation d'initiation au codage</a>
                 {/* <div id="slider">

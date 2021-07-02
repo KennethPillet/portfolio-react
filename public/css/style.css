@@ -21,6 +21,12 @@ header a{
 header a:hover{
     text-transform: uppercase;
 }
+header span:hover {
+    font-size: 0;
+}
+header span:hover:active {
+    content: attr(data-hover);
+}
 .sticky-header{
     position: sticky;
     top: 0;
@@ -41,4 +47,13 @@ span{
 }
 footer a{
     cursor: pointer;
+}
+#arrowBack{
+    position: fixed;
+    z-index: 31;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    left: 2em;
+    top:4em;
 }

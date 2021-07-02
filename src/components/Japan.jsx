@@ -1,9 +1,11 @@
 import React from 'react';
+import { BsArrow90DegLeft } from 'react-icons/bs';
 
 export class Japan extends React.Component{
     render(){
         return (
-            <div onClick={ this.props.goBack }>
+            <div>
+                <BsArrow90DegLeft id="arrowBack" onClick={ this.props.goBack } />
                 <div className="title">
                     <h1>Souvenir du Japon</h1>
                     <img src="" className="main-photo" alt="" />

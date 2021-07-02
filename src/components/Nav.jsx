@@ -5,7 +5,7 @@ export class Header extends React.Component {
     return (
       <header id="header" className="sticky-header">
         <nav>
-          <a href="#"><span>Qui suis je ?</span></a>
+          <span data-hover="Kenneth Pillet">Qui suis je ?</span>
           {/* <a>Portfolio</a> */}
           <a href="#contact">Contact</a>
           {/* <a href="#header"><i id="arrowUp" className="fas fa-chevron-up"></i></a> */}
