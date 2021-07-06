@@ -7,7 +7,7 @@ export class Sneakers extends React.Component{
     render(){
         return (
             <div>
-                <BsArrow90DegLeft id="arrowBack" onClick={ this.props.goBack } />
+            <BsArrow90DegLeft id="arrowBack" onClick={ this.props.goBack } />
                 <ImageSlider slides={SliderData} />
                 <a href="https://histoire-airmax.netlify.app" target="_blank"rel="noopener noreferrer">Site fais avec Bootstrap lors d'une formation d'initiation au codage</a>
                 {/* <div id="slider">
